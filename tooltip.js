@@ -77,8 +77,6 @@ function repositionTooltip(tooltip, element, positionTo) {
 function isOutOfBounds(element) {
   const elementRect = element.getBoundingClientRect()
   const containerRect = tooltipContainer.getBoundingClientRect()
-  // console.log('element', elementRect)
-  // console.log('container', containerRect)
 
   return {
     top: elementRect.top <= containerRect.top,
